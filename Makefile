@@ -3,7 +3,7 @@ SHELL=/bin/sh
 
 DESTDIR?=/usr/local
 prefix?=${DESTDIR}
-EXEC_FILES=bin/iex
+EXEC_FILES=bin/iex bin/mix
 
 all:
 	@echo "usage: make install"
