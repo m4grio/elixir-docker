@@ -3,7 +3,10 @@ SHELL=/bin/sh
 
 DESTDIR?=/usr/local
 prefix?=${DESTDIR}
-EXEC_FILES=bin/iex bin/mix
+EXEC_FILES=\
+	bin/elixir \
+	bin/iex \
+	bin/mix
 
 all:
 	@echo "usage: make install"

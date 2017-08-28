@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+docker run \
+    --rm \
+    -it \
+    --init \
+    -v `pwd`:/opt/app \
+    elixirdocker_elixir \
+    elixir $@

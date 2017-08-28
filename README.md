@@ -11,6 +11,19 @@ usage: make install
 
 ### Elixir:
 ```shell
+$ elixir --version # To confirm it is not locally installed
+zsh: command not found: elixir
+make install
+...
+$
+$ elixir --version
+Erlang/OTP 20 [erts-9.0.3] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:10] [hipe] [kernel-poll:false]
+
+Elixir 1.5.1
+$
+```
+### iex:
+```shell
 $ iex --version # To confirm it is not locally installed
 zsh: command not found: iex
 make install
