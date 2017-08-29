@@ -18,7 +18,7 @@ install:
 	install -m 0755 $(EXEC_FILES) $(prefix)/bin
 
 uninstall:
-	docker inspect --type=image elixirdocker_elixir &> /dev/null && docker rmi elixirdocker_elixir
+	docker inspect --type=image elixirdocker_elixir &> /dev/null && docker rmi elixirdocker_elixir || true
 	test -d $(prefix)/bin && \
 	cd $(prefix) && \
 	rm -f $(EXEC_FILES)
